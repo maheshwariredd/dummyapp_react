@@ -12,25 +12,31 @@
 // export default App;
 // component composition
 
-import React from 'react'
-import Navbar from './components/Navbar'
-import Main from './components/Main'
-import Sidebar1 from './components/Sidebar1'
-import Sidebar2 from './components/Sidebar2'
-import Footer from './components/Footer'
+// 
+import React, { Component } from 'react'
+import CBCPropEx from './propsex/CBCPropEx'
+import FBCPropsEx from './propsex/FBCPropsEx'
 
-const App = () => {
-  return (
-    <div className='app'>
-      <Navbar/>
-      <Main/>
-      <div className = 'sidebar'>
-        <Sidebar1/>
-        <Sidebar2/>
-      </div>
-      <Footer/>
-    </div>
-  )
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        {/* <CBCPropEx
+        username="maheshwari"
+        age={20}
+        hobbies={["playing","dancing","singing"]}
+        address={{city:"nalgonda",area:"bodaldhinna"}}
+        sendFun={function(){alert("hi iam maheshwari here")
+        }}
+        /> */}
+        <FBCPropsEx
+        username="maheshwari"
+        isMarried={true}
+        hobbies={["playing",""]}
+        />
+          </div>
+    )
+  }
 }
-export default App
+
 
