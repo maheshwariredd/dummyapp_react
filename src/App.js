@@ -13,14 +13,14 @@
 // component composition
 
 // 
-import React, { Component } from 'react'
-import CBCPropEx from './propsex/CBCPropEx'
-import FBCPropsEx from './propsex/FBCPropsEx'
+// import React, { Component } from 'react'
+// import CBCPropEx from './propsex/CBCPropEx'
+// import FBCPropsEx from './propsex/FBCPropsEx'
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
         {/* <CBCPropEx
         username="maheshwari"
         age={20}
@@ -29,14 +29,32 @@ export default class App extends Component {
         sendFun={function(){alert("hi iam maheshwari here")
         }}
         /> */}
-        <FBCPropsEx
-        username="maheshwari"
-        isMarried={true}
-        hobbies={["playing",""]}
+//         <FBCPropsEx
+//         username="maheshwari"
+//         isMarried={true}
+//         hobbies={["playing",""]}
+//         />
+//           </div>
+//     )
+//   }
+// }
+
+import React, { Component } from 'react'
+import CBCStateEx from './stateexample/CBCStateEx'
+//import FBCStateEx from './stateexample/FBCStateEx'
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <CBCStateEx
+        username="Mahi"
         />
-          </div>
+        </div>
     )
   }
 }
+
+
 
 
